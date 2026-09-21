@@ -51,7 +51,7 @@
     var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
     if (controller) {
       opts.signal = controller.signal;
-      setTimeout(function () { controller.abort(); }, 15000);
+      setTimeout(function () { controller.abort(); }, 60000);
     }
 
     return fetch(url, opts)

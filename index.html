@@ -2613,6 +2613,8 @@
 
       function initCatalog() {
         if (!window.KikiAPI) return; // static fallback stays visible
+        // Ping health first to wake Render's free-tier instance, then load catalog.
+        fetch(KikiAPI.API_BASE + "/health").catch(function () {});
         KikiAPI.loadCatalog().then(function (data) {
           KIKI.catalog = data;
 
