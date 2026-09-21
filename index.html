@@ -1,0 +1,2769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiki &amp; Crumbs — Soft Bakes &amp; Sweet Moments | Kano, Nigeria</title>
+    <meta name="description" content="Artisanal steamed cakes and frosted cupcakes baked fresh every Thursday and Sunday in Kano, Nigeria. Pre-order your custom box on WhatsApp." />
+    <meta property="og:title" content="Kiki &amp; Crumbs — Soft Bakes &amp; Sweet Moments" />
+    <meta property="og:description" content="Baked fresh every Thursday &amp; Sunday. Pre-orders open · Pickup free · Kano delivery from ₦1,000." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Playfair Display (Serif Headlines), Outfit (Clean Body), Caveat (Handwritten Accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+
+    <style>
+      /* --- DESIGN SYSTEM TOKENS --- */
+      :root {
+        --color-surface: #fef8f3;
+        --color-surface-card: #fff9f5;
+        --color-surface-warm: #fcf1e8;
+        --color-surface-soft: #f7ede4;
+        --color-primary: #4a2821;
+        --color-primary-dark: #31140e;
+        --color-primary-hover: #381e19;
+        --color-secondary: #e87a88;
+        --color-secondary-dark: #9d3f4e;
+        --color-secondary-tint: #fde8ec;
+        --color-secondary-soft: #faabb6;
+        --color-caramel: #f6be74;
+        --color-text: #4a2821;
+        --color-text-muted: #87625a;
+        --color-border: #f0dfd5;
+        --color-border-focus: #e87a88;
+        --color-whatsapp: #25d366;
+        --color-whatsapp-dark: #1ea952;
+        
+        --font-serif: "Playfair Display", Georgia, serif;
+        --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --font-hand: "Caveat", cursive;
+        
+        --shadow-sm: 0 2px 8px rgba(74, 40, 33, 0.05);
+        --shadow-md: 0 8px 24px -4px rgba(74, 40, 33, 0.08);
+        --shadow-lg: 0 16px 36px -6px rgba(74, 40, 33, 0.12);
+        
+        --radius-sm: 10px;
+        --radius-md: 16px;
+        --radius-lg: 24px;
+        --radius-full: 9999px;
+      }
+
+      /* Base Reset */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+        background-color: var(--color-surface);
+        color: var(--color-text);
+        font-family: var(--font-sans);
+        line-height: 1.6;
+      }
+
+      body {
+        background-color: var(--color-surface);
+        color: var(--color-text);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button, input, select {
+        font-family: inherit;
+      }
+
+      /* Layout Containers */
+      .container {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+
+      /* --- TOP ANNOUNCEMENT BAR --- */
+      .top-bar {
+        background-color: transparent;
+        padding: 0.75rem 0 0.25rem;
+      }
+
+      .top-bar-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        background-color: #f6eee8;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-full);
+        padding: 0.55rem 1.4rem;
+        font-size: 0.8125rem;
+        color: var(--color-text);
+      }
+
+      .top-bar-announcement {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+
+      .top-bar-announcement .heart-icon {
+        color: #d85a6a;
+      }
+
+      .top-bar-right {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+      }
+
+      .top-bar-link {
+        color: var(--color-secondary-dark);
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      .top-bar-link:hover {
+        color: var(--color-primary);
+      }
+
+      /* --- NAVIGATION HEADER --- */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: rgba(254, 248, 243, 0.96);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(240, 223, 213, 0.7);
+        transition: all 0.3s ease;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.9rem 0;
+      }
+
+      .brand-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+      }
+
+      .brand-icon-box {
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-full);
+        background: linear-gradient(135deg, #fde8ec 0%, #faabb6 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-primary);
+        box-shadow: 0 3px 8px rgba(232, 122, 136, 0.25);
+        font-size: 1.3rem;
+      }
+
+      .brand-title-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-name {
+        font-family: var(--font-serif);
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--color-primary);
+        line-height: 1.1;
+      }
+
+      .brand-tagline {
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--color-secondary-dark);
+      }
+
+      .nav-links {
+        display: none;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: var(--color-text-muted);
+        transition: color 0.2s ease;
+        position: relative;
+        padding: 0.4rem 0;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--color-primary);
+      }
+
+      .nav-link.nav-pill-active {
+        background-color: var(--color-primary);
+        color: #fff9f5 !important;
+        border-radius: var(--radius-full);
+        padding: 0.45rem 1.15rem;
+        font-weight: 600;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      /* Standard Buttons with min 44px tap targets */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.4rem;
+        min-height: 44px;
+        border-radius: var(--radius-full);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        border: none;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .btn-primary {
+        background-color: var(--color-primary);
+        color: #fff9f5;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--color-primary-hover);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn-secondary {
+        background-color: var(--color-secondary-tint);
+        color: var(--color-primary);
+        border: 1px solid var(--color-secondary-soft);
+      }
+
+      .btn-secondary:hover {
+        background-color: #fbd3da;
+        transform: translateY(-1px);
+      }
+
+      .btn-whatsapp {
+        background-color: #25d366;
+        color: #ffffff;
+        box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      }
+
+      .btn-whatsapp:hover {
+        background-color: #1ea952;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+      }
+
+      .btn-sm {
+        padding: 0.55rem 1.05rem;
+        min-height: 44px;
+        font-size: 0.85rem;
+      }
+
+      .btn-md {
+        padding: 0.75rem 1.5rem;
+        min-height: 46px;
+        font-size: 0.95rem;
+      }
+
+      .btn-lg {
+        padding: 0.9rem 1.9rem;
+        min-height: 50px;
+        font-size: 1.05rem;
+      }
+
+      /* Mobile Nav Drawer Toggle */
+      .mobile-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-border);
+        background: var(--color-surface-card);
+        color: var(--color-primary);
+        cursor: pointer;
+      }
+
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        padding: 1rem 1.25rem 1.5rem;
+        background: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .mobile-menu.open {
+        display: flex;
+      }
+
+      .mobile-menu a {
+        padding: 0.75rem 0;
+        font-weight: 500;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px dashed rgba(240, 223, 213, 0.6);
+      }
+
+      /* --- HERO SECTION --- */
+      .hero-section {
+        padding: 2.2rem 0 3.5rem;
+        position: relative;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.15rem;
+      }
+
+      .hero-location-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.38rem 0.95rem;
+        border-radius: var(--radius-full);
+        background-color: #f7e8e4;
+        color: var(--color-primary);
+        border: 1px solid #f2cfc6;
+        font-size: 0.78rem;
+        font-weight: 600;
+        width: fit-content;
+      }
+
+      .hero-kicker {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--color-secondary-dark);
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+
+      .hero-title {
+        font-family: var(--font-serif);
+        font-size: 2.6rem;
+        line-height: 1.12;
+        color: var(--color-primary-dark);
+        font-weight: 700;
+        letter-spacing: -0.015em;
+      }
+
+      .hero-title em {
+        font-family: var(--font-serif);
+        font-style: italic;
+        color: var(--color-secondary);
+        display: inline-block;
+      }
+
+      .hero-desc {
+        font-size: 1.05rem;
+        color: var(--color-text-muted);
+        line-height: 1.65;
+        max-width: 520px;
+      }
+
+      .hero-cta-group {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 0.25rem;
+      }
+
+      .hero-preorder-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.35rem 0.85rem;
+        border-radius: var(--radius-full);
+        background-color: #fdf2f4;
+        color: var(--color-secondary-dark);
+        border: 1px solid #f9dbe1;
+        font-size: 0.78rem;
+        font-weight: 600;
+        width: fit-content;
+      }
+
+      /* Hero Visual Card displaying Picture Banner */
+      .hero-visual-card {
+        position: relative;
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 0.65rem;
+        border: 1px solid rgba(240, 223, 213, 0.85);
+        box-shadow: 0 16px 36px -6px rgba(74, 40, 33, 0.12), 0 6px 16px -3px rgba(74, 40, 33, 0.06);
+      }
+
+      .hero-media-wrapper {
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        background: #f5ebe6;
+      }
+
+      .hero-media-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 18px;
+        object-fit: cover;
+      }
+
+      /* Floating badges on Hero Visual Card */
+      .hero-floating-badge {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(240, 223, 213, 0.9);
+        box-shadow: 0 8px 22px rgba(74, 40, 33, 0.12);
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      .badge-top-right {
+        top: 1rem;
+        right: 1rem;
+        border-radius: var(--radius-full);
+        padding: 0.4rem 0.95rem;
+      }
+
+      .badge-spark {
+        font-size: 0.95rem;
+        color: var(--color-caramel);
+      }
+
+      .badge-stack {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+
+      .badge-sub-title {
+        font-size: 0.625rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-text-muted);
+      }
+
+      .badge-main-title {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        letter-spacing: -0.01em;
+      }
+
+      .badge-bottom-left {
+        bottom: 1rem;
+        left: 1rem;
+        border-radius: 14px;
+        padding: 0.5rem 0.9rem;
+      }
+
+      .badge-van-icon {
+        font-size: 1.25rem;
+      }
+
+      .badge-van-title {
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .badge-van-sub {
+        font-size: 0.68rem;
+        font-weight: 700;
+        color: var(--color-caramel);
+      }
+
+      @media (max-width: 480px) {
+        .badge-top-right {
+          top: 0.6rem;
+          right: 0.6rem;
+          padding: 0.35rem 0.75rem;
+        }
+        .badge-bottom-left {
+          bottom: 0.6rem;
+          left: 0.6rem;
+          padding: 0.35rem 0.75rem;
+        }
+      }
+
+      /* --- PROMISE / WHY KANO LOVES OUR BAKES --- */
+      .section-promise {
+        padding: 3.2rem 0;
+        background-color: var(--color-surface-warm);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto 2.2rem;
+      }
+
+      .section-kicker {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-secondary-dark);
+        margin-bottom: 0.45rem;
+        display: block;
+      }
+
+      .section-title {
+        font-family: var(--font-serif);
+        font-size: 1.95rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+        line-height: 1.25;
+      }
+
+      .section-subtitle {
+        font-size: 0.9375rem;
+        color: var(--color-text-muted);
+        margin-top: 0.5rem;
+      }
+
+      .promise-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .promise-card {
+        background: var(--color-surface-card);
+        border-radius: var(--radius-md);
+        padding: 1.5rem;
+        border: 1px solid var(--color-border);
+        box-shadow: var(--shadow-sm);
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .promise-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .promise-icon-bubble {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-full);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+      }
+
+      .bubble-rose {
+        background-color: #fde8ec;
+        color: var(--color-secondary-dark);
+      }
+
+      .bubble-amber {
+        background-color: #faeee4;
+        color: var(--color-primary);
+      }
+
+      .promise-card h3 {
+        font-family: var(--font-serif);
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .promise-card p {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        line-height: 1.55;
+      }
+
+      /* --- FAVORITES / PRODUCT MENU --- */
+      .section-menu {
+        padding: 3.5rem 0;
+      }
+
+      .filter-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .filter-chip {
+        padding: 0.55rem 1.15rem;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-full);
+        font-size: 0.875rem;
+        font-weight: 600;
+        background: var(--color-surface-warm);
+        color: var(--color-text-muted);
+        border: 1.5px solid var(--color-border);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .filter-chip:hover {
+        color: var(--color-primary);
+        border-color: #dfcac0;
+      }
+
+      .filter-chip.active {
+        background: var(--color-primary);
+        color: #fff9f5;
+        border-color: var(--color-primary);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .product-card {
+        background: var(--color-surface-card);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--shadow-sm);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .product-media-wrap {
+        position: relative;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background: #ede3dc;
+      }
+
+      .product-media-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.35s ease;
+      }
+
+      .product-card:hover .product-media-wrap img {
+        transform: scale(1.03);
+      }
+
+      .product-tag {
+        position: absolute;
+        top: 0.85rem;
+        left: 0.85rem;
+        background: rgba(74, 40, 33, 0.9);
+        color: #fff9f5;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.65rem;
+        border-radius: var(--radius-full);
+      }
+
+      .product-tag.tag-pink {
+        background: var(--color-secondary);
+      }
+
+      .product-fav-btn {
+        position: absolute;
+        top: 0.85rem;
+        right: 0.85rem;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-full);
+        background: rgba(255, 249, 245, 0.88);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(240, 223, 213, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-secondary);
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .product-fav-btn:hover {
+        transform: scale(1.08);
+        background: #fff;
+      }
+
+      .product-body {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 0.5rem;
+      }
+
+      .product-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
+      .product-name {
+        font-family: var(--font-serif);
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        line-height: 1.2;
+      }
+
+      .product-size-badge {
+        font-size: 0.72rem;
+        font-weight: 600;
+        background: var(--color-secondary-tint);
+        color: var(--color-secondary-dark);
+        padding: 0.2rem 0.6rem;
+        border-radius: var(--radius-full);
+        white-space: nowrap;
+      }
+
+      .product-desc {
+        font-size: 0.84rem;
+        color: var(--color-text-muted);
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+      }
+
+      .product-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        padding-top: 0.75rem;
+        border-top: 1px dashed var(--color-border);
+      }
+
+      .product-price-block {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-price-label {
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-muted);
+      }
+
+      .product-price {
+        font-family: var(--font-sans);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+      }
+
+      /* --- HOW TO ORDER / 3 STEPS --- */
+      .section-steps {
+        padding: 3rem 0;
+        background: var(--color-surface-warm);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .step-card {
+        background: var(--color-surface-card);
+        border-radius: var(--radius-md);
+        padding: 1.6rem 1.25rem;
+        border: 1px solid var(--color-border);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.65rem;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .step-number-bubble {
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-full);
+        background: #fde8ec;
+        color: var(--color-secondary-dark);
+        font-family: var(--font-serif);
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px rgba(232, 122, 136, 0.2);
+        margin-bottom: 0.35rem;
+      }
+
+      .step-card h3 {
+        font-family: var(--font-serif);
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .step-card p {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        line-height: 1.5;
+        max-width: 280px;
+      }
+
+      /* --- LAUNCH SPECIAL CARD --- */
+      .section-launch {
+        padding: 2.8rem 0;
+      }
+
+      .launch-special-card {
+        max-width: 680px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, #fff9f5 0%, #fef1f3 100%);
+        border: 2px dashed var(--color-secondary-soft);
+        border-radius: var(--radius-lg);
+        padding: 2rem 1.5rem;
+        text-align: center;
+        box-shadow: var(--shadow-md);
+        position: relative;
+      }
+
+      .launch-ribbon-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: var(--radius-full);
+        background: var(--color-secondary-tint);
+        color: var(--color-secondary-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        margin: 0 auto 0.75rem;
+        box-shadow: 0 3px 8px rgba(232, 122, 136, 0.25);
+      }
+
+      .launch-title {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+        margin-bottom: 0.5rem;
+      }
+
+      .launch-highlight {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--color-secondary-dark);
+        line-height: 1.5;
+        max-width: 480px;
+        margin: 0 auto 1.25rem;
+      }
+
+      .launch-code-pill {
+        display: inline-block;
+        background: #fff;
+        padding: 0.35rem 0.85rem;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-primary);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      /* --- PHOTO GALLERY MOMENTS --- */
+      .section-gallery {
+        padding: 2.5rem 0 3.5rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.85rem;
+      }
+
+      .gallery-item {
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+        background: #ebdcd4;
+        border: 1px solid var(--color-border);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.04);
+      }
+
+      /* --- BUILD YOUR BOX ORDER SECTION --- */
+      .section-order-builder {
+        padding: 3.5rem 0 4.5rem;
+        background: linear-gradient(180deg, var(--color-surface) 0%, #faeee4 100%);
+        border-top: 1px solid var(--color-border);
+      }
+
+      .builder-card {
+        background: var(--color-surface-card);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+        box-shadow: var(--shadow-lg);
+        padding: 1.5rem;
+        max-width: 780px;
+        margin: 0 auto;
+      }
+
+      .builder-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .builder-title {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+      }
+
+      .builder-subtitle {
+        font-size: 0.95rem;
+        color: var(--color-text-muted);
+        margin-top: 0.35rem;
+      }
+
+      .form-step {
+        margin-bottom: 2rem;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px dashed var(--color-border);
+      }
+
+      .form-step-title {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        margin-bottom: 0.35rem;
+      }
+
+      .form-step-badge {
+        width: 28px;
+        height: 28px;
+        border-radius: var(--radius-full);
+        background: var(--color-primary);
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .form-step-hint {
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+        margin-bottom: 1rem;
+      }
+
+      /* Radio Cards for Box Size */
+      .box-size-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+      }
+
+      .box-radio-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.15rem;
+        min-height: 52px;
+        border-radius: var(--radius-md);
+        border: 1.5px solid var(--color-border);
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .box-radio-label:hover {
+        border-color: #dfcac0;
+        background: #fffdfb;
+      }
+
+      .box-radio-label.selected {
+        border-color: var(--color-primary);
+        background: #fdf6f3;
+        box-shadow: 0 0 0 1px var(--color-primary);
+      }
+
+      .box-radio-input {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c2b1a8;
+        border-radius: 50%;
+        margin-right: 0.85rem;
+        outline: none;
+        display: grid;
+        place-content: center;
+        transition: border-color 0.2s;
+        flex-shrink: 0;
+      }
+
+      .box-radio-input::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        transform: scale(0);
+        transition: transform 0.15s ease-in-out;
+      }
+
+      .box-radio-input:checked {
+        border-color: var(--color-primary);
+      }
+
+      .box-radio-input:checked::before {
+        transform: scale(1);
+      }
+
+      .box-info-wrap {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      .box-title-text {
+        font-weight: 700;
+        color: var(--color-primary);
+        font-size: 1rem;
+      }
+
+      .box-desc-text {
+        font-size: 0.78rem;
+        color: var(--color-text-muted);
+        display: block;
+      }
+
+      .box-price-text {
+        font-family: var(--font-sans);
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: var(--color-primary-dark);
+      }
+
+      /* Flavors Checkboxes Grid */
+      .flavors-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .flavor-checkbox-label {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        padding: 0.85rem 1rem;
+        min-height: 48px;
+        border-radius: var(--radius-md);
+        border: 1.5px solid var(--color-border);
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .flavor-checkbox-label:hover {
+        border-color: #dfcac0;
+      }
+
+      .flavor-checkbox-label.selected {
+        border-color: var(--color-secondary);
+        background: #fdf4f6;
+      }
+
+      .flavor-checkbox-input {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c2b1a8;
+        border-radius: 6px;
+        outline: none;
+        display: grid;
+        place-content: center;
+        transition: all 0.15s ease-in-out;
+        flex-shrink: 0;
+      }
+
+      .flavor-checkbox-input::before {
+        content: "✔";
+        color: #fff;
+        font-size: 11px;
+        font-weight: 900;
+        transform: scale(0);
+        transition: transform 0.15s ease-in-out;
+      }
+
+      .flavor-checkbox-input:checked {
+        background-color: var(--color-secondary-dark);
+        border-color: var(--color-secondary-dark);
+      }
+
+      .flavor-checkbox-input:checked::before {
+        transform: scale(1);
+      }
+
+      .flavor-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flavor-name {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--color-primary);
+      }
+
+      .flavor-sub {
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+      }
+
+      /* Delivery & Day Selects, Name Input */
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .input-label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 0.85rem 1.1rem;
+        min-height: 48px;
+        border-radius: var(--radius-md);
+        border: 1.5px solid var(--color-border);
+        background: #fff;
+        font-size: 0.9375rem;
+        color: var(--color-text);
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+
+      .form-control:focus {
+        border-color: var(--color-border-focus);
+        box-shadow: 0 0 0 3px rgba(232, 122, 136, 0.2);
+      }
+
+      /* Live Order Summary & Total */
+      .order-summary-box {
+        background: #fdf6f3;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        padding: 1.25rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .summary-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+      }
+
+      .summary-line.total-line {
+        border-top: 1.5px solid var(--color-border);
+        padding-top: 0.75rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+      }
+
+      .summary-flavors-list {
+        font-size: 0.8125rem;
+        color: var(--color-primary);
+        font-weight: 500;
+        background: #fff;
+        padding: 0.5rem 0.75rem;
+        border-radius: var(--radius-sm);
+        border: 1px dashed var(--color-border);
+      }
+
+      .whatsapp-submit-btn {
+        width: 100%;
+        padding: 1.05rem 1.5rem;
+        min-height: 52px;
+        font-size: 1.1rem;
+        margin-top: 1.25rem;
+      }
+
+      .order-payment-note {
+        text-align: center;
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+        margin-top: 0.85rem;
+        line-height: 1.45;
+      }
+
+      /* --- FINAL CTA SECTION --- */
+      .section-final-cta {
+        background-color: var(--color-primary-dark);
+        color: #fff9f5;
+        padding: 4rem 0;
+        text-align: center;
+        position: relative;
+      }
+
+      .final-cta-kicker {
+        font-family: var(--font-hand);
+        font-size: 1.5rem;
+        color: var(--color-secondary-soft);
+        margin-bottom: 0.4rem;
+        display: block;
+      }
+
+      .final-cta-title {
+        font-family: var(--font-serif);
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.25;
+        max-width: 650px;
+        margin: 0 auto 1.25rem;
+      }
+
+      .final-cta-notice {
+        font-size: 1.05rem;
+        color: #f7dcd6;
+        max-width: 520px;
+        margin: 0 auto 2rem;
+        line-height: 1.55;
+      }
+
+      .final-cta-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.4rem 1rem;
+        border-radius: var(--radius-full);
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      /* --- FOOTER --- */
+      .site-footer {
+        background-color: #270f0a;
+        color: #e4d3cc;
+        padding: 3.5rem 0 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+      }
+
+      .footer-brand-title {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff9f5;
+      }
+
+      .footer-brand-desc {
+        font-size: 0.875rem;
+        line-height: 1.6;
+        color: #cbbab3;
+        max-width: 320px;
+      }
+
+      .footer-col h4 {
+        font-family: var(--font-serif);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #fff9f5;
+        margin-bottom: 1rem;
+      }
+
+      .footer-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .footer-col li {
+        font-size: 0.875rem;
+        color: #cbbab3;
+      }
+
+      .footer-delivery-highlight {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-sm);
+        padding: 0.85rem 1rem;
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        color: #f7dcd6;
+        margin-top: 0.75rem;
+      }
+
+      .footer-bottom {
+        padding-top: 1.75rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8125rem;
+        color: #a8948d;
+      }
+
+      /* Toast Notification */
+      .toast-notice {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--color-primary);
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+        font-size: 0.875rem;
+        font-weight: 500;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        pointer-events: none;
+      }
+
+      .toast-notice.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      /* --- RESPONSIVE BREAKPOINTS --- */
+      @media (min-width: 640px) {
+        .box-size-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .flavors-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .form-row {
+          grid-template-columns: 1fr 1fr;
+        }
+        .promise-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .steps-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .gallery-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media (min-width: 768px) {
+        .nav-links {
+          display: flex;
+        }
+        .mobile-toggle {
+          display: none;
+        }
+        .hero-title {
+          font-size: 3.2rem;
+        }
+        .hero-grid {
+          grid-template-columns: 1.05fr 0.95fr;
+          gap: 2.5rem;
+        }
+        .product-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+        }
+        .footer-bottom {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .promise-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TOP NOTIFICATION / ANNOUNCEMENT BAR -->
+    <div class="top-bar" id="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-announcement">
+          <span class="heart-icon">♥</span>
+          <span>Baked fresh every Thursday &amp; Sunday — order 2 days ahead</span>
+        </div>
+        <div class="top-bar-right">
+          <span>Kano Dispatch Active Today</span>
+          <span>·</span>
+          <a href="#menu" class="top-bar-link">Browse Flavours &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand-logo" id="header-brand-logo">
+          <div class="brand-icon-box">🧁</div>
+          <div class="brand-title-wrap">
+            <span class="brand-name">Kiki &amp; Crumbs</span>
+            <span class="brand-tagline">STEAMED CAKES &amp; CUPCAKES</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-links" id="desktop-nav">
+            <li><a href="#top" class="nav-link nav-pill-active">Home</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#promise" class="nav-link">About Us</a></li>
+            <li><a href="#launch-special" class="nav-link">Special Occasions</a></li>
+            <li><a href="#footer" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <a href="#order-builder" class="btn btn-primary btn-sm" id="header-order-btn">
+            <span>Order Now</span>
+          </a>
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div class="mobile-menu" id="mobile-menu-drawer">
+        <a href="#top" class="mobile-nav-link">Home</a>
+        <a href="#menu" class="mobile-nav-link">Menu</a>
+        <a href="#promise" class="mobile-nav-link">About Us</a>
+        <a href="#launch-special" class="mobile-nav-link">Special Occasions</a>
+        <a href="#order-builder" class="mobile-nav-link">Order Now</a>
+        <a href="#footer" class="mobile-nav-link">Contact</a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-location-pill" id="hero-badge-sub">
+            <span>🛵</span>
+            <span>Delivering across Kano • Nassarawa, Tarauni, GRA, Hotoro</span>
+          </div>
+
+          <div class="hero-kicker">
+            <span>▾</span>
+            <span>HANDCRAFTED ARTISAN BAKES</span>
+          </div>
+
+          <h1 class="hero-title">
+            Soft Bakes.<br />
+            <em>Sweet Moments.</em>
+          </h1>
+
+          <p class="hero-desc">
+            Freshly made signature steamed cakes and frosted cupcakes, prepared with artisanal love and delivered delightfully warm &amp; fluffy across Kano.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#order-builder" class="btn btn-primary btn-lg" id="hero-order-box-btn">
+              <span>🧁 Order Now</span>
+            </a>
+            <a href="#menu" class="btn btn-secondary btn-lg" id="hero-browse-flavors-btn">
+              <span>Custom Event Boxes &rarr;</span>
+            </a>
+          </div>
+
+          <div class="hero-preorder-tag" id="hero-badge-fresh">
+            <span>New in Kano</span>
+            <span>🎀</span>
+            <span>Pre-orders open</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-card" id="hero-visual-container">
+          <div class="hero-media-wrapper">
+            <img
+              src="/cake.jpeg"
+              onerror="if(!this.dataset.triedBackup){this.dataset.triedBackup='1';this.src='/banner.jpg';}"
+              alt="Kiki &amp; Crumbs — Steamed Cakes &amp; Cupcakes Banner"
+              loading="eager"
+              referrerPolicy="no-referrer"
+              id="hero-banner-image"
+            />
+            <!-- Top Right Floating Pill: Signature Cloud Steamed -->
+            <div class="hero-floating-badge badge-top-right" id="hero-badge-steamed">
+              <span class="badge-spark">✨</span>
+              <div class="badge-stack">
+                <span class="badge-sub-title">Signature</span>
+                <span class="badge-main-title">Cloud Steamed</span>
+              </div>
+            </div>
+            <!-- Bottom Left Floating Card: Fast Kano City Dispatch -->
+            <div class="hero-floating-badge badge-bottom-left" id="hero-badge-dispatch">
+              <span class="badge-van-icon">🚚</span>
+              <div class="badge-stack">
+                <span class="badge-van-title">Fast Kano City Dispatch</span>
+                <span class="badge-van-sub">Warm Doorstep Drop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY KANO LOVES OUR BAKES (ARTISANAL PROMISE) -->
+    <section class="section-promise" id="promise">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">ARTISANAL PROMISE</span>
+          <h2 class="section-title">Why Kano Loves Our Bakes</h2>
+          <p class="section-subtitle">Crafted using gentle steam and authentic ingredients, keeping every bite tender, light, and deeply satisfying.</p>
+        </div>
+
+        <div class="promise-grid">
+          <div class="promise-card" id="promise-fresh">
+            <div class="promise-icon-bubble bubble-rose">🌾</div>
+            <h3>Fresh Ingredients</h3>
+            <p>Organic unbleached flour, fresh farm eggs, pure unsalted butter, and real cocoa bakes with zero artificial fillers.</p>
+          </div>
+
+          <div class="promise-card" id="promise-soft">
+            <div class="promise-icon-bubble bubble-amber">♥</div>
+            <h3>Soft &amp; Delicious</h3>
+            <p>Our signature gentle steaming produces a melt-in-the-mouth, springy, cloud-like texture unlike dry oven bakes.</p>
+          </div>
+
+          <div class="promise-card" id="promise-homemade">
+            <div class="promise-icon-bubble bubble-rose">🧁</div>
+            <h3>Homemade Goodness</h3>
+            <p>Prepared in micro-batches right here in Kano. Zero industrial preservatives, strictly hand-mixed and carefully packaged.</p>
+          </div>
+
+          <div class="promise-card" id="promise-love">
+            <div class="promise-icon-bubble bubble-rose">☺</div>
+            <h3>Made with Love</h3>
+            <p>Every box leaves with hand-tied satin ribbons, a customized handwritten note card, and thoughtful details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SWEET CRAVING FAVORITES (PRODUCT MENU) -->
+    <section class="section-menu" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">FRESH FROM THE KITCHEN</span>
+          <h2 class="section-title">Sweet Craving Favorites</h2>
+          <p class="section-subtitle">Order as single treat boxes or mix-and-match our signature steamed sponges and frosted cupcakes.</p>
+        </div>
+
+        <!-- Filter Chips (Vanilla JS Filtering) -->
+        <div class="filter-bar" id="category-filter-bar">
+          <button class="filter-chip active" data-category="all" id="filter-all">All Bakes</button>
+          <button class="filter-chip" data-category="steamed" id="filter-steamed">Steamed Cakes</button>
+          <button class="filter-chip" data-category="cupcakes" id="filter-cupcakes">Cupcake Boxes</button>
+        </div>
+
+        <!-- Products Grid (No ratings or fake stars) -->
+        <div class="product-grid" id="product-grid">
+          <!-- Item 1: Rainbow Steamed Cakes -->
+          <article class="product-card" data-category="steamed" id="product-rainbow-steamed">
+            <div class="product-media-wrap">
+              <img
+                src="/rainbow-steamed-cakes.jpg"
+                onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80';}"
+                alt="Rainbow Steamed Cakes - ultra soft pillowy colorful sponge cakes"
+                loading="lazy"
+                id="product-img-rainbow"
+              />
+              <span class="product-tag tag-pink">TOP BESTSELLER</span>
+              <button class="product-fav-btn" aria-label="Favorite Rainbow Steamed">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Rainbow Steamed Cakes</h3>
+                <span class="product-size-badge">Box of 4</span>
+              </div>
+              <p class="product-desc">Ultra-soft, pillowy steamed sponge cakes with delicate sweetness. Light, fluffy, and delightfully tender.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦4,500</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="4"
+                  data-flavor="Rainbow Steamed"
+                  id="order-btn-rainbow"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Chocolate Fudge Swirl -->
+          <article class="product-card" data-category="cupcakes" id="product-chocolate-fudge">
+            <div class="product-media-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=700&q=80"
+                alt="Chocolate Fudge Swirl Cupcakes with rich cocoa frosting"
+                loading="lazy"
+              />
+              <span class="product-tag">RICH COCOA</span>
+              <button class="product-fav-btn" aria-label="Favorite Chocolate Fudge">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Chocolate Fudge Swirl</h3>
+                <span class="product-size-badge">Box of 6</span>
+              </div>
+              <p class="product-desc">Rich cocoa sponge piped with glossy whipped fudge frosting and delicate chocolate flakes.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦6,000</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="6"
+                  data-flavor="Chocolate Fudge"
+                  id="order-btn-choco"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Strawberry Dream -->
+          <article class="product-card" data-category="cupcakes" id="product-strawberry-dream">
+            <div class="product-media-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=700&q=80"
+                alt="Strawberry Dream Cupcakes topped with strawberry buttercream"
+                loading="lazy"
+              />
+              <span class="product-tag tag-pink">BAKER'S PICK</span>
+              <button class="product-fav-btn" aria-label="Favorite Strawberry Dream">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Strawberry Dream</h3>
+                <span class="product-size-badge">Box of 6</span>
+              </div>
+              <p class="product-desc">Light vanilla sponge topped with lush strawberry buttercream, sugar pearls, and sweet fruit glaze.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦6,000</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="6"
+                  data-flavor="Strawberry Dream"
+                  id="order-btn-strawberry"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Velvet Vanilla Bean -->
+          <article class="product-card" data-category="cupcakes" id="product-velvet-vanilla">
+            <div class="product-media-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80"
+                alt="Velvet Vanilla cupcakes with velvety whipped buttercream"
+                loading="lazy"
+              />
+              <button class="product-fav-btn" aria-label="Favorite Velvet Vanilla">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Velvet Vanilla Bean</h3>
+                <span class="product-size-badge">Box of 6</span>
+              </div>
+              <p class="product-desc">Pure vanilla sponge with velvety whipped buttercream and a miniature sugar love heart.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦6,000</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="6"
+                  data-flavor="Velvet Vanilla"
+                  id="order-btn-vanilla"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Royal Red Velvet -->
+          <article class="product-card" data-category="cupcakes" id="product-red-velvet">
+            <div class="product-media-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=700&q=80"
+                alt="Royal Red Velvet Cupcakes with silky cream cheese frosting"
+                loading="lazy"
+              />
+              <button class="product-fav-btn" aria-label="Favorite Red Velvet">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Royal Red Velvet</h3>
+                <span class="product-size-badge">Box of 6</span>
+              </div>
+              <p class="product-desc">Deep crimson cocoa cake with silky cream cheese frosting and dusted with delicate red velvet crumb.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦6,000</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="6"
+                  data-flavor="Red Velvet"
+                  id="order-btn-redvelvet"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Cookies & Cream Oreo -->
+          <article class="product-card" data-category="cupcakes" id="product-cookies-cream">
+            <div class="product-media-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=700&q=80"
+                alt="Cookies and Cream Cupcakes with chocolate biscuit"
+                loading="lazy"
+              />
+              <button class="product-fav-btn" aria-label="Favorite Cookies & Cream">♥</button>
+            </div>
+            <div class="product-body">
+              <div class="product-head">
+                <h3 class="product-name">Cookies &amp; Cream Oreo</h3>
+                <span class="product-size-badge">Box of 6</span>
+              </div>
+              <p class="product-desc">Decadent cocoa sponge folded with crushed cookies, topped with vanilla cookie whip and a crisp chocolate biscuit.</p>
+              <div class="product-footer">
+                <div class="product-price-block">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price">₦6,000</span>
+                </div>
+                <button
+                  class="btn btn-primary btn-sm preselect-order-btn"
+                  data-box="6"
+                  data-flavor="Cookies & Cream"
+                  id="order-btn-oreo"
+                >
+                  Order This Box
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW KANO ORDERS FROM US (3 STEPS) -->
+    <section class="section-steps" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">EFFORTLESS &amp; FRESH</span>
+          <h2 class="section-title">How Kano Orders From Us</h2>
+          <p class="section-subtitle">From our steaming pots to your table in 3 straightforward steps.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card" id="step-1">
+            <div class="step-number-bubble">1</div>
+            <h3>Pick Your Boxes</h3>
+            <p>Select your preferred box size and mix of steamed sponges or cupcake flavors using our box builder.</p>
+          </div>
+
+          <div class="step-card" id="step-2">
+            <div class="step-number-bubble">2</div>
+            <h3>Select Delivery or Pickup</h3>
+            <p>Choose convenient delivery across Kano, or free pickup from our home kitchen.</p>
+          </div>
+
+          <div class="step-card" id="step-3">
+            <div class="step-number-bubble">3</div>
+            <h3>Enjoy Sweet Moments</h3>
+            <p>Receive warm, aromatic bakes packaged in pretty craft boxes tied with ribbons and a personal note.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAUNCH SPECIAL -->
+    <section class="section-launch" id="launch-special">
+      <div class="container">
+        <div class="launch-special-card" id="launch-special-card">
+          <div class="launch-ribbon-icon">🎀</div>
+          <h2 class="launch-title">Grand Opening Launch Special</h2>
+          <p class="launch-highlight">
+            First 20 boxes get 10% off + a free handwritten gift note 🎀 Mention <span class="launch-code-pill">LAUNCH</span> when ordering on WhatsApp.
+          </p>
+          <a href="#order-builder" class="btn btn-primary btn-md" id="launch-claim-btn">
+            <span>Build Your Box &amp; Mention LAUNCH</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRESH KITCHEN MOMENTS GALLERY -->
+    <section class="section-gallery">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=500&q=80" alt="Freshly frosted artisanal cupcakes" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=500&q=80" alt="Handcrafting delicate sweet bakery swirls" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=500&q=80" alt="Beautiful bakery gift box packaging" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Artisan baker preparing fresh dough" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILD YOUR BOX ORDER SECTION -->
+    <section class="section-order-builder" id="order-builder">
+      <div class="container">
+        <div class="builder-card" id="builder-card">
+          <div class="builder-header">
+            <span class="section-kicker">PRE-ORDER VIA WHATSAPP</span>
+            <h2 class="builder-title">Build Your Custom Box</h2>
+            <p class="builder-subtitle">Choose your box size, pick your favorite flavors, and send your order straight to Kiki on WhatsApp.</p>
+          </div>
+
+          <form id="order-form" onsubmit="handleOrderSubmit(event)">
+            <!-- STEP 1: BOX SIZE -->
+            <div class="form-step">
+              <h3 class="form-step-title">
+                <span class="form-step-badge">1</span>
+                <span>Select Box Size</span>
+              </h3>
+              <p class="form-step-hint">Choose how many treats you'd like in your box:</p>
+
+              <div class="box-size-grid" id="box-size-options">
+                <!-- Box of 4: ₦4,500 -->
+                <label class="box-radio-label selected" id="box-label-4">
+                  <input
+                    type="radio"
+                    name="box_size"
+                    value="Box of 4 — ₦4,500"
+                    data-price="4500"
+                    data-count="4"
+                    class="box-radio-input"
+                    checked
+                  />
+                  <div class="box-info-wrap">
+                    <div>
+                      <div class="box-title-text">Box of 4</div>
+                      <span class="box-desc-text">Perfect for sweet treats</span>
+                    </div>
+                  </div>
+                  <div class="box-price-text">₦4,500</div>
+                </label>
+
+                <!-- Box of 6: ₦6,000 -->
+                <label class="box-radio-label" id="box-label-6">
+                  <input
+                    type="radio"
+                    name="box_size"
+                    value="Box of 6 — ₦6,000"
+                    data-price="6000"
+                    data-count="6"
+                    class="box-radio-input"
+                  />
+                  <div class="box-info-wrap">
+                    <div>
+                      <div class="box-title-text">Box of 6</div>
+                      <span class="box-desc-text">Most popular family box</span>
+                    </div>
+                  </div>
+                  <div class="box-price-text">₦6,000</div>
+                </label>
+
+                <!-- Box of 12: ₦11,000 -->
+                <label class="box-radio-label" id="box-label-12">
+                  <input
+                    type="radio"
+                    name="box_size"
+                    value="Box of 12 — ₦11,000"
+                    data-price="11000"
+                    data-count="12"
+                    class="box-radio-input"
+                  />
+                  <div class="box-info-wrap">
+                    <div>
+                      <div class="box-title-text">Box of 12</div>
+                      <span class="box-desc-text">Celebration party pack</span>
+                    </div>
+                  </div>
+                  <div class="box-price-text">₦11,000</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- STEP 2: FLAVORS CHECKBOXES (MIX & MATCH) -->
+            <div class="form-step">
+              <h3 class="form-step-title">
+                <span class="form-step-badge">2</span>
+                <span>Select Flavors (Mix &amp; Match)</span>
+              </h3>
+              <p class="form-step-hint">Select one or more flavors for your assorted box:</p>
+
+              <div class="flavors-grid" id="flavors-checkbox-group">
+                <!-- Flavor 1 -->
+                <label class="flavor-checkbox-label selected" id="flavor-label-chocolate">
+                  <input type="checkbox" name="flavors" value="Chocolate Fudge" class="flavor-checkbox-input" checked />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Chocolate Fudge</span>
+                    <span class="flavor-sub">Rich cocoa sponge with glossy whipped fudge frosting</span>
+                  </div>
+                </label>
+
+                <!-- Flavor 2 -->
+                <label class="flavor-checkbox-label selected" id="flavor-label-strawberry">
+                  <input type="checkbox" name="flavors" value="Strawberry Dream" class="flavor-checkbox-input" checked />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Strawberry Dream</span>
+                    <span class="flavor-sub">Lush strawberry buttercream &amp; sweet fruit glaze</span>
+                  </div>
+                </label>
+
+                <!-- Flavor 3 -->
+                <label class="flavor-checkbox-label" id="flavor-label-vanilla">
+                  <input type="checkbox" name="flavors" value="Velvet Vanilla" class="flavor-checkbox-input" />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Velvet Vanilla</span>
+                    <span class="flavor-sub">Pure vanilla sponge with velvety whipped buttercream</span>
+                  </div>
+                </label>
+
+                <!-- Flavor 4 -->
+                <label class="flavor-checkbox-label" id="flavor-label-redvelvet">
+                  <input type="checkbox" name="flavors" value="Red Velvet" class="flavor-checkbox-input" />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Red Velvet</span>
+                    <span class="flavor-sub">Deep cocoa cake with silky cream cheese frosting</span>
+                  </div>
+                </label>
+
+                <!-- Flavor 5 -->
+                <label class="flavor-checkbox-label" id="flavor-label-cookies">
+                  <input type="checkbox" name="flavors" value="Cookies & Cream" class="flavor-checkbox-input" />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Cookies &amp; Cream</span>
+                    <span class="flavor-sub">Decadent cocoa sponge with crushed cookies &amp; cream</span>
+                  </div>
+                </label>
+
+                <!-- Flavor 6 -->
+                <label class="flavor-checkbox-label" id="flavor-label-rainbow">
+                  <input type="checkbox" name="flavors" value="Rainbow Steamed" class="flavor-checkbox-input" />
+                  <div class="flavor-info">
+                    <span class="flavor-name">Rainbow Steamed</span>
+                    <span class="flavor-sub">Ultra-soft pillowy steamed sponge, naturally light</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- STEP 3: DELIVERY & BAKE DAY -->
+            <div class="form-step">
+              <h3 class="form-step-title">
+                <span class="form-step-badge">3</span>
+                <span>Delivery Option &amp; Bake Day</span>
+              </h3>
+              <p class="form-step-hint">Select how you want to receive your order and your desired bake day:</p>
+
+              <div class="form-row">
+                <!-- Delivery Select -->
+                <div class="input-group">
+                  <label for="delivery-select" class="input-label">Delivery or Pickup:</label>
+                  <select id="delivery-select" class="form-control" onchange="updateLiveSummary()">
+                    <option value="Pickup (Free)" data-fee="0">Pickup (Free)</option>
+                    <option value="GRA–Nassarawa ₦1,500" data-fee="1500">GRA–Nassarawa (₦1,500)</option>
+                    <option value="Tarauni–Farm Centre ₦1,000" data-fee="1000">Tarauni–Farm Centre (₦1,000)</option>
+                    <option value="Hotoro–Zoo Road ₦1,500" data-fee="1500">Hotoro–Zoo Road (₦1,500)</option>
+                  </select>
+                </div>
+
+                <!-- Delivery Address (shown when delivery is selected) -->
+                <div class="input-group" id="delivery-address-group" style="display:none;">
+                  <label for="delivery-address" class="input-label">Delivery Address:</label>
+                  <input
+                    type="text"
+                    id="delivery-address"
+                    class="form-control"
+                    placeholder="House number, street, area"
+                  />
+                </div>
+
+                <!-- Bake Day Select -->
+                <div class="input-group">
+                  <label for="bake-day-select" class="input-label">Bake Day:</label>
+                  <select id="bake-day-select" class="form-control" onchange="updateLiveSummary()">
+                    <option value="Thursday">Thursday (Order by Tuesday)</option>
+                    <option value="Sunday">Sunday (Order by Friday)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: CUSTOMER NAME -->
+            <div class="form-step" style="border-bottom: none; padding-bottom: 0;">
+              <h3 class="form-step-title">
+                <span class="form-step-badge">4</span>
+                <span>Your Name</span>
+              </h3>
+              <div class="input-group">
+                <label for="customer-name" class="input-label">What name should we put on your box?</label>
+                <input
+                  type="text"
+                  id="customer-name"
+                  class="form-control"
+                  placeholder="e.g. Fatima Bello"
+                  required
+                  oninput="updateLiveSummary()"
+                />
+              </div>
+
+              <!-- Customer Phone (required for order confirmation/tracking) -->
+              <div class="input-group">
+                <label for="customer-phone" class="input-label">Phone Number (for order updates):</label>
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  class="form-control"
+                  placeholder="e.g. 0803 123 4567"
+                  required
+                />
+              </div>
+
+              <!-- Promo Code (optional, validated live by the backend) -->
+              <div class="input-group">
+                <label for="promo-code" class="input-label">Promo Code (optional):</label>
+                <input
+                  type="text"
+                  id="promo-code"
+                  class="form-control"
+                  placeholder="e.g. KIKI10"
+                  oninput="previewPromo()"
+                />
+                <div id="promo-feedback" style="font-size: 0.8rem; margin-top: 0.35rem; min-height: 1rem;"></div>
+              </div>
+
+              <!-- Payment Method -->
+              <div class="input-group">
+                <label class="input-label">Payment Method:</label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="radio" name="payment_method" value="BANK_TRANSFER" checked />
+                  Bank Transfer
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="radio" name="payment_method" value="CASH" />
+                  Cash on Delivery / Pickup
+                </label>
+              </div>
+            </div>
+
+            <!-- LIVE ORDER SUMMARY -->
+            <div class="order-summary-box" id="order-summary-box">
+              <div class="summary-line">
+                <span>Selected Box:</span>
+                <strong id="summary-box-text">Box of 4 — ₦4,500</strong>
+              </div>
+              <div class="summary-line">
+                <span>Selected Flavors:</span>
+              </div>
+              <div class="summary-flavors-list" id="summary-flavors-list">
+                Chocolate Fudge, Strawberry Dream
+              </div>
+              <div class="summary-line">
+                <span>Delivery:</span>
+                <strong id="summary-delivery-text">Pickup (Free)</strong>
+              </div>
+              <div class="summary-line">
+                <span>Bake Day:</span>
+                <strong id="summary-bake-day-text">Thursday</strong>
+              </div>
+              <div class="summary-line" id="summary-discount-line" style="display:none;">
+                <span>Promo Discount:</span>
+                <strong id="summary-discount-text" style="color: #2e7d32;">—</strong>
+              </div>
+              <div class="summary-line total-line">
+                <span>Estimated Total:</span>
+                <span id="summary-total-price">₦4,500</span>
+              </div>
+            </div>
+
+            <!-- SEND ORDER BUTTON -->
+            <button type="submit" class="btn btn-whatsapp whatsapp-submit-btn" id="submit-whatsapp-btn">
+              <span>💬</span>
+              <span>Send Order on WhatsApp</span>
+            </button>
+
+            <!-- PAYMENT NOTE UNDER BUTTON -->
+            <p class="order-payment-note">
+              No payment needed now — Kiki confirms your order on WhatsApp. Pay on delivery or by bank transfer.
+            </p>
+          </form>
+
+          <!-- ORDER CONFIRMATION (shown after a successful API order) -->
+          <div class="order-summary-box" id="order-confirmation" style="display:none;">
+            <div class="summary-line">
+              <strong style="font-size: 1.1rem;">✅ Order Placed!</strong>
+            </div>
+            <div class="summary-line">
+              <span>Your order number:</span>
+              <strong id="confirm-order-number">—</strong>
+            </div>
+            <div class="summary-line">
+              <span>Total:</span>
+              <strong id="confirm-total">—</strong>
+            </div>
+            <a
+              id="confirm-whatsapp-btn"
+              class="btn btn-whatsapp whatsapp-submit-btn"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="margin-top: 0.75rem; display: inline-flex;"
+            >
+              <span>💬</span>
+              <span>Confirm on WhatsApp</span>
+            </a>
+            <p class="order-payment-note" id="confirm-note">
+              Save your order number — you can track your order with it and your phone number.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="section-final-cta" id="final-cta">
+      <div class="container">
+        <span class="final-cta-kicker">Because life is sweeter with cake</span>
+        <div class="final-cta-badge">Freshness Guarantee</div>
+        <h2 class="final-cta-title">Ready For Something Soft, Sweet &amp; Wonderfully Delicious?</h2>
+        <p class="final-cta-notice">
+          Order by Tuesday for Thursday delivery, or by Friday for Sunday.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#order-builder" class="btn btn-primary btn-lg" style="background-color: var(--color-secondary); color: #fff;" id="final-cta-order-btn">
+            <span>Build Your Box Now</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://wa.me/2347072302151" class="btn btn-secondary btn-lg whatsapp-link" style="background-color: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.25);" target="_blank" rel="noopener noreferrer" id="final-cta-whatsapp-link">
+            <span>Direct WhatsApp Chat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.4rem;">🧁</span>
+            <span class="footer-brand-title">Kiki &amp; Crumbs</span>
+          </div>
+          <p class="footer-brand-desc">
+            Soft Bakes. Sweet Moments. Artisan steamed cakes and frosted cupcakes handcrafted with fresh ingredients in Kano, Nigeria.
+          </p>
+          <div style="font-size: 0.8125rem; color: #a8948d;">
+            Bake days: Thursdays &amp; Sundays only
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bakes &amp; Boxes</h4>
+          <ul>
+            <li><a href="#menu">Rainbow Steamed Cakes</a></li>
+            <li><a href="#menu">Chocolate Fudge Swirl</a></li>
+            <li><a href="#menu">Strawberry Dream</a></li>
+            <li><a href="#menu">Velvet Vanilla Bean</a></li>
+            <li><a href="#menu">Royal Red Velvet</a></li>
+            <li><a href="#menu">Cookies &amp; Cream Oreo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kano Delivery Areas</h4>
+          <ul>
+            <li>Nassarawa GRA</li>
+            <li>Tarauni &amp; Farm Centre</li>
+            <li>Hotoro &amp; Zoo Road</li>
+            <li>Free pickup from our home kitchen</li>
+          </ul>
+          <div class="footer-delivery-highlight" id="footer-delivery-line">
+            Pickup free · Delivery across Kano from ₦1,000 · Pay on delivery or bank transfer
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Pre-Orders</h4>
+          <p style="font-size: 0.84rem; color: #cbbab3; margin-bottom: 0.75rem;">
+            Questions or custom event sizes in Kano? Message Kiki directly.
+          </p>
+          <a href="https://wa.me/2347072302151" class="btn btn-whatsapp btn-sm whatsapp-link" target="_blank" rel="noopener noreferrer" id="footer-whatsapp-link">
+            <span>💬 Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>
+          &copy; 2026 Kiki &amp; Crumbs Bakery · Kano, Nigeria. All rights reserved.
+        </div>
+        <div>
+          WhatsApp Pre-orders only · Freshly baked with love
+        </div>
+      </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notice" id="toast-notice">
+      <span>🧁</span>
+      <span id="toast-text">Box pre-selected! Customize your flavors below.</span>
+    </div>
+
+    <!-- API CLIENT (backend bridge — loads before the ordering engine) -->
+    <script>
+      window.KIKI_API_BASE = window.KIKI_API_BASE || "https://kiki-and-crumbs-api.onrender.com";
+    </script>
+    <script src="js/api-client.js"></script>
+    <script src="js/api-render.js"></script>
+
+    <script>
+      /**
+       * KIKI & CRUMBS ORDERING ENGINE — API-integrated
+       * Catalog, availability, pricing and order creation all come from the
+       * Go backend (the system of record). WhatsApp is only the confirmation
+       * channel (PRD §32). Falls back to the static markup below if the API
+       * is unreachable.
+       */
+
+      var KIKI = {
+        catalog: null,   // loaded catalog snapshot
+        promo: null      // { code, discount } after a successful promo check
+      };
+
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      // Show temporary toast message
+      function showToast(message) {
+        var toast = document.getElementById("toast-notice");
+        var toastText = document.getElementById("toast-text");
+        if (toast && toastText) {
+          toastText.textContent = message;
+          toast.classList.add("show");
+          setTimeout(function () { toast.classList.remove("show"); }, 3500);
+        }
+      }
+
+      function formatNaira(n) {
+        return "₦" + Number(n || 0).toLocaleString("en-NG");
+      }
+
+      // ---------- selection helpers ----------
+
+      function selectedBox() {
+        var r = document.querySelector('input[name="box_size"]:checked');
+        if (!r) return null;
+        return {
+          id: r.getAttribute("data-box-id"),
+          count: parseInt(r.getAttribute("data-count"), 10) || 0,
+          price: parseInt(r.getAttribute("data-price"), 10) || 0,
+          label: r.value
+        };
+      }
+
+      function checkedFlavors() {
+        return Array.prototype.slice.call(
+          document.querySelectorAll('input[name="flavors"]:checked')
+        );
+      }
+
+      /**
+       * Split the box count across the checked flavors as evenly as possible
+       * (remainder goes to the first flavors). The backend re-validates the
+       * sum against the box quantity (PRD §15).
+       */
+      function buildFlavorQuantities(boxCount, checks) {
+        var n = checks.length;
+        if (!n) return [];
+        var base = Math.floor(boxCount / n);
+        var rem = boxCount % n;
+        return checks.map(function (cb, i) {
+          return {
+            flavor_id: cb.getAttribute("data-flavor-id"),
+            quantity: base + (i < rem ? 1 : 0)
+          };
+        });
+      }
+
+      function deliveryState() {
+        var sel = document.getElementById("delivery-select");
+        var opt = sel ? sel.options[sel.selectedIndex] : null;
+        if (!opt) return { isDelivery: false, fee: 0, label: "Pickup (Free)" };
+        return {
+          isDelivery: opt.getAttribute("data-type") === "DELIVERY",
+          fee: parseInt(opt.getAttribute("data-fee") || "0", 10),
+          label: opt.value,
+          zoneId: opt.getAttribute("data-zone-id")
+        };
+      }
+
+      // ---------- live order summary ----------
+
+      function updateLiveSummary() {
+        var box = selectedBox();
+        var boxPrice = box ? box.price : 4500;
+        var summaryBoxText = $("summary-box-text");
+        if (summaryBoxText && box) summaryBoxText.textContent = box.label;
+
+        var names = checkedFlavors().map(function (cb) { return cb.value; });
+        var list = $("summary-flavors-list");
+        if (list) {
+          list.textContent = names.length ? names.join(", ") : "Please pick at least 1 flavor";
+        }
+
+        var d = deliveryState();
+        var addrGroup = $("delivery-address-group");
+        if (addrGroup) addrGroup.style.display = d.isDelivery ? "" : "none";
+        var summaryDeliveryText = $("summary-delivery-text");
+        if (summaryDeliveryText) summaryDeliveryText.textContent = d.label;
+
+        var dateSel = $("bake-day-select");
+        var summaryBakeDayText = $("summary-bake-day-text");
+        if (summaryBakeDayText) {
+          summaryBakeDayText.textContent = dateSel && dateSel.value ? dateSel.value : "—";
+        }
+
+        var discount = KIKI.promo ? KIKI.promo.discount : 0;
+        var discLine = $("summary-discount-line");
+        if (discLine) {
+          discLine.style.display = discount > 0 ? "" : "none";
+          var t = $("summary-discount-text");
+          if (t) t.textContent = "− " + formatNaira(discount);
+        }
+
+        var total = Math.max(boxPrice + d.fee - discount, 0);
+        var summaryTotalPrice = $("summary-total-price");
+        if (summaryTotalPrice) summaryTotalPrice.textContent = formatNaira(total);
+      }
+      window.updateLiveSummary = updateLiveSummary;
+
+      // ---------- promo code preview (dry run; final check at order time) ----------
+
+      var promoTimer = null;
+      function previewPromo() {
+        if (!window.KikiAPI) return;
+        clearTimeout(promoTimer);
+        promoTimer = setTimeout(function () {
+          var input = $("promo-code");
+          var feedback = $("promo-feedback");
+          if (!input || !feedback) return;
+          var code = input.value.trim();
+          KIKI.promo = null;
+          if (!code) { feedback.textContent = ""; updateLiveSummary(); return; }
+
+          var box = selectedBox();
+          KikiAPI.validatePromo(code, box ? box.price : 0).then(function (res) {
+            KIKI.promo = { code: res.code, discount: res.discount };
+            feedback.style.color = "#2e7d32";
+            feedback.textContent = "✓ " + res.code + " applied — you save " + formatNaira(res.discount);
+            updateLiveSummary();
+          }).catch(function (err) {
+            feedback.style.color = "#b3261e";
+            feedback.textContent = err && err.message ? err.message : "Could not check that code.";
+            updateLiveSummary();
+          });
+        }, 400);
+      }
+      window.previewPromo = previewPromo;
+
+      // ---------- catalog bootstrap ----------
+
+      function bindDynamicListeners() {
+        // Filter chips
+        var chips = document.querySelectorAll(".filter-chip");
+        var cards = document.querySelectorAll(".product-card");
+        chips.forEach(function (chip) {
+          chip.addEventListener("click", function () {
+            chips.forEach(function (c) { c.classList.remove("active"); });
+            chip.classList.add("active");
+            var category = chip.getAttribute("data-category");
+            cards.forEach(function (card) {
+              var cardCat = card.getAttribute("data-category");
+              card.style.display = (category === "all" || cardCat === category) ? "flex" : "none";
+            });
+          });
+        });
+
+        // Box radio styling
+        document.querySelectorAll('input[name="box_size"]').forEach(function (radio) {
+          radio.addEventListener("change", function () {
+            document.querySelectorAll(".box-radio-label").forEach(function (l) {
+              l.classList.remove("selected");
+            });
+            var parent = radio.closest(".box-radio-label");
+            if (parent) parent.classList.add("selected");
+            updateLiveSummary();
+          });
+        });
+
+        // Flavor checkbox styling
+        document.querySelectorAll('input[name="flavors"]').forEach(function (cb) {
+          cb.addEventListener("change", function () {
+            var parent = cb.closest(".flavor-checkbox-label");
+            if (parent) parent.classList.toggle("selected", cb.checked);
+            updateLiveSummary();
+          });
+        });
+
+        // "Order This Box" preselect buttons
+        document.querySelectorAll(".preselect-order-btn").forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            var targetBoxCount = btn.getAttribute("data-box") || "4";
+            var targetFlavor = btn.getAttribute("data-flavor") || "";
+
+            document.querySelectorAll('input[name="box_size"]').forEach(function (radio) {
+              var isMatch = radio.getAttribute("data-count") === targetBoxCount;
+              radio.checked = isMatch;
+              var p = radio.closest(".box-radio-label");
+              if (p) p.classList.toggle("selected", isMatch);
+            });
+            document.querySelectorAll('input[name="flavors"]').forEach(function (cb) {
+              var isMatch = cb.value.toLowerCase() === targetFlavor.toLowerCase();
+              cb.checked = isMatch;
+              var p = cb.closest(".flavor-checkbox-label");
+              if (p) p.classList.toggle("selected", isMatch);
+            });
+
+            updateLiveSummary();
+            var builder = document.getElementById("order-builder");
+            if (builder) builder.scrollIntoView({ behavior: "smooth" });
+            showToast("Selected " + targetFlavor + " (Box of " + targetBoxCount + ")!");
+          });
+        });
+      }
+
+      function initCatalog() {
+        if (!window.KikiAPI) return; // static fallback stays visible
+        KikiAPI.loadCatalog().then(function (data) {
+          KIKI.catalog = data;
+
+          var slugById = {};
+          data.categories.forEach(function (c) { slugById[c.id] = c.slug; });
+
+          $("product-grid").innerHTML = KikiAPI.Render.products(data.products, slugById);
+          $("category-filter-bar").innerHTML = KikiAPI.Render.categoryChips(data.categories);
+          $("box-size-options").innerHTML = KikiAPI.Render.boxOptions(data.boxOptions);
+          $("flavors-checkbox-group").innerHTML = KikiAPI.Render.flavors(data.flavors);
+          $("delivery-select").innerHTML = KikiAPI.Render.deliveryZones(data.deliveryZones);
+          $("bake-day-select").innerHTML = KikiAPI.Render.bakeDays(data.availability);
+
+          // Sync static WhatsApp links to the configured business number.
+          var waNumber = (data.config && data.config.whatsapp_number) || "";
+          if (waNumber) {
+            document.querySelectorAll(".whatsapp-link").forEach(function (link) {
+              link.href = "https://wa.me/" + waNumber;
+            });
+          }
+
+          bindDynamicListeners();
+          updateLiveSummary();
+        }).catch(function (err) {
+          showToast((err && err.message) || "The menu is unavailable right now.");
+        });
+      }
+
+      // ---------- order submission (PRD §32/§34/§35) ----------
+
+      function showConfirmation(order, whatsappUrl) {
+        var panel = $("order-confirmation");
+        if (!panel) return;
+        $("confirm-order-number").textContent = order.order_number;
+        $("confirm-total").textContent = formatNaira(order.total);
+        var btn = $("confirm-whatsapp-btn");
+        if (whatsappUrl) {
+          btn.href = whatsappUrl;
+          btn.style.display = "";
+        } else {
+          btn.style.display = "none";
+        }
+        panel.style.display = "";
+        panel.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function handleOrderSubmit(event) {
+        event.preventDefault();
+
+        if (!window.KikiAPI || !KIKI.catalog) {
+          showToast("Still connecting to the kitchen — try again in a moment.");
+          return;
+        }
+
+        var name = ($("customer-name").value || "").trim();
+        var phone = ($("customer-phone").value || "").trim();
+        var box = selectedBox();
+        var flavors = checkedFlavors();
+
+        if (!name) { alert("Please enter your name so Kiki knows who the box is for."); $("customer-name").focus(); return; }
+        if (!phone) { alert("Please add your phone number so Kiki can reach you about the order."); $("customer-phone").focus(); return; }
+        if (!box || !box.id) { alert("Please choose a box size."); return; }
+        if (flavors.length === 0) { alert("Please select at least one flavor for your box."); return; }
+
+        var d = deliveryState();
+        var address = null;
+        if (d.isDelivery) {
+          address = ($("delivery-address").value || "").trim();
+          if (!address) { alert("Please add your delivery address."); $("delivery-address").focus(); return; }
+        }
+
+        var dateSel = $("bake-day-select");
+        if (!dateSel.value) {
+          alert("No bake days are open right now — please check back soon.");
+          return;
+        }
+
+        var pay = document.querySelector('input[name="payment_method"]:checked');
+
+        var payload = {
+          items: [{
+            box_option_id: box.id,
+            quantity: 1,
+            flavors: buildFlavorQuantities(box.count, flavors)
+          }],
+          fulfillment_type: d.isDelivery ? "DELIVERY" : "PICKUP",
+          fulfillment_date: dateSel.value,
+          customer: { name: name, phone: phone },
+          payment_method: pay ? pay.value : "BANK_TRANSFER"
+        };
+        if (d.isDelivery) {
+          payload.delivery_zone_id = d.zoneId;
+          payload.delivery_address = address;
+        }
+        if (KIKI.promo) payload.promo_code = KIKI.promo.code;
+
+        var btn = $("submit-whatsapp-btn");
+        var label = btn.querySelector("span:last-child");
+        var original = label.textContent;
+        btn.disabled = true;
+        label.textContent = "Placing your order…";
+
+        // Open a blank window synchronously (inside the click handler) so the
+        // browser doesn't treat it as a popup. We'll set its location once the
+        // API responds.
+        var waWindow = window.open("", "_blank");
+
+        KikiAPI.createOrder(payload).then(function (res) {
+          KikiAPI.newIdempotencyKey();
+          btn.disabled = false;
+          label.textContent = original;
+          showConfirmation(res.order, res.whatsapp_url);
+          showToast("Order " + res.order.order_number + " placed!");
+          if (res.whatsapp_url && waWindow) {
+            waWindow.location.href = res.whatsapp_url;
+          } else if (waWindow) {
+            waWindow.close();
+          }
+        }).catch(function (err) {
+          btn.disabled = false;
+          label.textContent = original;
+          if (waWindow) waWindow.close();
+          showToast((err && err.message) || "Could not place the order. Please try again.");
+        });
+      }
+      window.handleOrderSubmit = handleOrderSubmit;
+
+      // ---------- boot ----------
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu drawer (static DOM)
+        var mobileToggleBtn = $("mobile-toggle-btn");
+        var mobileMenuDrawer = $("mobile-menu-drawer");
+        if (mobileToggleBtn && mobileMenuDrawer) {
+          mobileToggleBtn.addEventListener("click", function () {
+            mobileMenuDrawer.classList.toggle("open");
+          });
+          document.querySelectorAll(".mobile-nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+              mobileMenuDrawer.classList.remove("open");
+            });
+          });
+        }
+
+        // Address visibility + summary follow the delivery / bake-day selects.
+        $("delivery-select").addEventListener("change", updateLiveSummary);
+        $("bake-day-select").addEventListener("change", updateLiveSummary);
+
+        updateLiveSummary();
+        initCatalog();
+      });
+    </script>
+  </body>
+</html>

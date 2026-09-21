@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/kiki-&amp;-crumbs-fe.iml" filepath="$PROJECT_DIR$/.idea/kiki-&amp;-crumbs-fe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../kiki-and-crumbs-api/.idea/kiki-and-crumbs-api.iml" filepath="$PROJECT_DIR$/../kiki-and-crumbs-api/.idea/kiki-and-crumbs-api.iml" />
+    </modules>
+  </component>
+</project>

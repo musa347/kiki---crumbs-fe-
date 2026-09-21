@@ -1,0 +1,6 @@
+{
+  "name": "Kiki & Crumbs",
+  "description": "Artisanal steamed cakes and frosted cupcakes baked fresh twice a week in Kano, Nigeria. Pre-order via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
